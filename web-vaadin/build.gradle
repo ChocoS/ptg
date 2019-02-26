@@ -1,0 +1,8 @@
+ext {
+    vaadinVersion = "12.0.4"
+}
+
+dependencies {
+    compile project(":backend")
+    compile "com.vaadin:vaadin-spring-boot-starter:$vaadinVersion"
+}

@@ -1,0 +1,6 @@
+dependencies {
+    compile "org.springframework:spring-context"
+    compile "org.apache.commons:commons-math3:3.6.1"
+    testCompile "org.mockito:mockito-core"
+    testCompile "junit:junit"
+}

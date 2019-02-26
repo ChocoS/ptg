@@ -1,0 +1,5 @@
+rootProject.name = "pythagorastreegenerator"
+
+include "backend"
+include "web-vaadin"
+include "server"

@@ -1,0 +1,29 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.1.RELEASE")
+    }
+}
+
+subprojects {
+    apply plugin: "java"
+    apply plugin: "idea"
+    apply plugin: 'io.spring.dependency-management'
+
+    group = "com.pwawrzyniak.pythagorastreegenerator"
+    version = "0.0.1-SNAPSHOT"
+    sourceCompatibility = JavaVersion.VERSION_1_8
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencyManagement {
+        imports {
+            mavenBom org.springframework.boot.gradle.plugin.SpringBootPlugin.BOM_COORDINATES
+        }
+    }
+}
